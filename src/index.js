@@ -31,7 +31,7 @@ axisY
     .setValue(thresholdGoodY)
     .setStrokeStyle((stroke) => stroke.setFillStyle(new SolidFill({ color: colorGood.setA(50) })))
 
-fetch(document.head.baseURI + 'examples/assets/0051/data.json')
+fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'examples/assets/0051/data.json')
     .then((r) => r.json())
     .then((valuesY) => {
         const lineSeries = chart
