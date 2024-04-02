@@ -7,7 +7,7 @@ const { lightningChart, PalettedFill, LUT, ColorRGBA, SolidFill, Themes } = lcjs
 
 const chart = lightningChart()
     .ChartXY({
-        theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined
+        theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('Line Chart with dynamic good/bad values highlighting')
 
