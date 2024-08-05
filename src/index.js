@@ -2,7 +2,7 @@
  * Example showcasing Line Series feature for coloring line dynamically based on Y coordinates
  */
 
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 const { lightningChart, PalettedFill, LUT, ColorRGBA, SolidFill, Themes } = lcjs
 
 const chart = lightningChart({
