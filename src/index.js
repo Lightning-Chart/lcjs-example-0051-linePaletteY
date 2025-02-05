@@ -3,7 +3,7 @@
  */
 
 const lcjs = require('@lightningchart/lcjs')
-const { lightningChart, PalettedFill, LUT, ColorRGBA, SolidFill, Themes } = lcjs
+const { lightningChart, PalettedFill, LUT, ColorRGBA, SolidFill, emptyFill, Themes } = lcjs
 
 const chart = lightningChart({
             resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
@@ -23,13 +23,13 @@ const axisY = chart.getDefaultAxisY()
 
 axisY
     .addConstantLine()
-    .setMouseInteractions(false)
+    .setPointerEvents(false)
     .setValue(thresholdBadY)
     .setStrokeStyle((stroke) => stroke.setFillStyle(new SolidFill({ color: colorBad.setA(50) })))
 
 axisY
     .addConstantLine()
-    .setMouseInteractions(false)
+    .setPointerEvents(false)
     .setValue(thresholdGoodY)
     .setStrokeStyle((stroke) => stroke.setFillStyle(new SolidFill({ color: colorGood.setA(50) })))
 
@@ -37,12 +37,11 @@ fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pat
     .then((r) => r.json())
     .then((valuesY) => {
         const lineSeries = chart
-            .addLineSeries({
-                dataPattern: {
-                    pattern: 'ProgressiveX',
-                },
+            .addPointLineAreaSeries({
+                dataPattern: 'ProgressiveX',
             })
-            .addArrayY(valuesY)
+            .setAreaFillStyle(emptyFill)
+            .appendSamples({ yValues: valuesY })
 
         const colorNormal = lineSeries.getStrokeStyle().getFillStyle().getColor()
         const yMin = lineSeries.getYMin()
