@@ -9,6 +9,7 @@ const chart = lightningChart({
             resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
         })
     .ChartXY({
+        legend: { visible: false },
         theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('Line Chart with dynamic good/bad values highlighting')
@@ -36,12 +37,7 @@ axisY
 fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'examples/assets/0051/data.json')
     .then((r) => r.json())
     .then((valuesY) => {
-        const lineSeries = chart
-            .addPointLineAreaSeries({
-                dataPattern: 'ProgressiveX',
-            })
-            .setAreaFillStyle(emptyFill)
-            .appendSamples({ yValues: valuesY })
+        const lineSeries = chart.addLineSeries().appendSamples({ yValues: valuesY })
 
         const colorNormal = lineSeries.getStrokeStyle().getFillStyle().getColor()
         const yMin = lineSeries.getYMin()
