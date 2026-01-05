@@ -27,7 +27,7 @@ Probably the most common need for dynamic Y based coloring comes from scenarios 
 
 [//]: # 'IMPORTANT: The assets will not show before README.md is built - relative path is different!'
 
-![](./assets/picture1.jpg)
+![Picture 1](./assets/picture1.jpg)
 
 The dynamic Y coloring feature allows the visualization of this kind of value thresholds very intuitively, by automatically changing color of each data point based on the Y coordinate.
 
@@ -37,7 +37,7 @@ The lookup table associates a range of _Values_ with corresponding _Colors_.
 
 [//]: # 'IMPORTANT: The assets will not show before README.md is built - relative path is different!'
 
-![](./assets/picture2.png)
+![Picture 2](./assets/picture2fixed.png)
 
 Dynamic line coloring is a powerful feature which can serve many different needs. The best thing about it is that it doesn't compromise performance, meaning that you can use it just as well with 100 data points or 100 million data points.
 
