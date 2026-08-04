@@ -80,12 +80,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2026. All rights reserved.
 
 
-[Chart XY]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/ChartXY.html
-[Axis]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/Axis.html
-[Line series]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/PointLineAreaSeries.html
-[Paletted fill]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/PalettedFill.html
-[Color lookup table]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/LUT.html
-[Color RGBA]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/functions/ColorRGBA.html
-[Solid fill style]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/SolidFill.html
-[Constant line]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/ConstantLine.html
+[Chart XY]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/ChartXY.html
+[Axis]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/Axis.html
+[Line series]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/PointLineAreaSeries.html
+[Paletted fill]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/PalettedFill.html
+[Color lookup table]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/LUT.html
+[Color RGBA]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/functions/ColorRGBA.html
+[Solid fill style]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/SolidFill.html
+[Constant line]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/ConstantLine.html
 
